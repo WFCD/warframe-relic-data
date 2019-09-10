@@ -7,7 +7,7 @@ if [ -n "$(git status --porcelain)" ];then
   git config user.email "titaniaci@sleepylux.xyz"
   git add .
   git commit -m "📝 Update(items) for Warframe Version $WARFRAME_BUILD"
-  git remote set-url origin "https://$ACCESS_TOKEN@github.com/TitaniaProject/warframe-relic-data"
+  git remote set-url origin "https://Soundofdarkness:$ACCESS_TOKEN@github.com/TitaniaProject/warframe-relic-data"
   git push --set-upstream origin master
   echo "Sucessfully updated Items to Warframe version $WARFRAME_BUILD"
 else
