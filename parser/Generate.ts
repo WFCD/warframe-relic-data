@@ -43,12 +43,8 @@ async function getWarframeVersion(){
     const $ = cheerio.load(data.body);
     let elem: CheerioElement;
     const wfVersion = $("td[style=\"vertical-align:middle; height: 70px;\"]").text().replace("\n", "").trim();
-    fs.writeFile(path.join(process.cwd(), "data/", "version"),wfVersion, {encoding: "utf-8"}, (err => {
-        if(err){
-            return Promise.reject(err);
-        }
-        return Promise.resolve();
-    }));
+    fs.writeFileSync(path.join(process.cwd(), "data/", "version.json"), JSON.stringify({version: wfVersion}), {encoding: "utf-8"});
+    fs.writeFileSync(path.join(process.cwd(), "data/", "version"),wfVersion, {encoding: "utf-8"});
 }
 
 async function checkIfNewer(raw: string){
