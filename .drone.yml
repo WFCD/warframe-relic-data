@@ -12,7 +12,9 @@ steps:
 
   - name: update Git
     image: alpine/git
+    user: root
     commands:
+      - chmod +x ./update.sh
       - ./update.sh
     environment:
       ACCESS_TOKEN:
