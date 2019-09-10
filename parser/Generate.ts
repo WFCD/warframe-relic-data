@@ -61,6 +61,7 @@ async function checkIfNewer(raw: string){
     }
     catch (e) {
         console.log("No hash found. Regenerating ..");
+        fs.writeFileSync(path.join(process.cwd(), "last_hash"), hash, {encoding: "utf-8"});
         return true;
     }
 }
