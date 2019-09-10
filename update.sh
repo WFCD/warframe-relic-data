@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-if [ -z "$(git status --porcelain)" ];then
+if [ -n "$(git status --porcelain)" ];then
   echo "Changes found => pushing"
   WARFRAME_BUILD="$(cat ./data/version)"
   git config user.name "Titania CI"
