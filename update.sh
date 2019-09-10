@@ -8,7 +8,7 @@ if [ -n "$(git status --porcelain)" ];then
   git add .
   git commit -m "📝 Update(items) for Warframe Version $WARFRAME_BUILD"
   git remote rm origin
-  git remote add origin https://"$ACCESS_TOKEN":Soundofdarkness@github.com/TitaniaProject/warframe-relic-data
+  git remote add origin "https://$ACCESS_TOKEN@github.com/TitaniaProject/warframe-relic-data"
   git push -u origin master
   echo "Sucessfully updated Items to Warframe version $WARFRAME_BUILD"
 else
