@@ -39,7 +39,7 @@ https://cdn.jsdelivr.net/gh/TitaniaProject/warframe-relic-data/data/Relics.min.j
 
 ## Credits
 
-This library would't be possible without these projects and people. Thanks! ❤️
+This library wouldn't be possible without these projects and people. Thanks! ❤️
 
 - [warframe-items](https://github.com/WFCD/warframe-items) License: [MIT](https://github.com/WFCD/warframe-items/blob/development/LICENSE)
 - [warframe.market](https://warframe.market)
