@@ -5,6 +5,7 @@ if [ -z "$(git status --porcelain)" ];then
   WARFRAME_BUILD="$(cat ./data/version)"
   git config user.name "Titania CI"
   git config user.email "titaniaci@sleepylux.xyz"
+  git add .
   git commit -m "📝 Update(items) for Warframe Version $WARFRAME_BUILD"
   git remote rm origin
   git remote add origin https://"$ACCESS_TOKEN":x-oauth-basic@github.com/TitaniaProject/warframe-relic-data
