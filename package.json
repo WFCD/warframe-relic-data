@@ -1,0 +1,27 @@
+{
+  "name": "warframe-relic-data",
+  "version": "1.0.0",
+  "description": "Relic Data for Warframe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "export": "ts-node Parser.ts"
+  },
+  "keywords": [
+    "warframe",
+    "relics"
+  ],
+  "author": "Soundofdarkness",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "got": "^9.6.0",
+    "tough-cookie": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.13",
+    "@types/got": "^9.6.7",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}

@@ -1,0 +1,901 @@
+[
+    {
+        "name": "Axi S5",
+        "rewards": [
+            {
+                "type": "Rare",
+                "chance": 0.02,
+                "item": "Spira Prime Pouch"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Nikana Prime Blade"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Forma Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Saryn Prime Systems Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Venka Prime Blades"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Cernos Prime Grip"
+            }
+        ],
+        "locations": [
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.38780000000000003
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.38780000000000003
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.33039999999999997
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.33039999999999997
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25680000000000003
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25680000000000003
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.2143
+            },
+            {
+                "location": "Void - Mot",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Void - Mithra",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Void - Marduk",
+                "rarity": "Rare",
+                "chance": 0.0588
+            },
+            {
+                "location": "Void - Aten",
+                "rarity": "Rare",
+                "chance": 0.0588
+            },
+            {
+                "location": "Void - Belenus",
+                "rarity": "Rare",
+                "chance": 0.025099999999999997
+            }
+        ],
+        "vaulted": false,
+        "warframeMarket": null
+    },
+    {
+        "name": "Axi V9",
+        "rewards": [
+            {
+                "type": "Rare",
+                "chance": 0.02,
+                "item": "Venka Prime Gauntlet"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Valkyr Prime Systems Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Spira Prime Blade"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Valkyr Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Saryn Prime Neuroptics Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Forma Blueprint"
+            }
+        ],
+        "locations": [
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.38780000000000003
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.33039999999999997
+            },
+            {
+                "location": "Level 40 - 60 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25680000000000003
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.2143
+            },
+            {
+                "location": "Level 40 - 60 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.2143
+            },
+            {
+                "location": "Void - Mot",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Void - Mithra",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Void - Marduk",
+                "rarity": "Rare",
+                "chance": 0.0588
+            },
+            {
+                "location": "Void - Aten",
+                "rarity": "Rare",
+                "chance": 0.0588
+            },
+            {
+                "location": "Void - Belenus",
+                "rarity": "Rare",
+                "chance": 0.025099999999999997
+            }
+        ],
+        "vaulted": false,
+        "warframeMarket": null
+    },
+    {
+        "name": "Lith C5",
+        "rewards": [
+            {
+                "type": "Rare",
+                "chance": 0.02,
+                "item": "Cernos Prime Lower Limb"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Venka Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Valkyr Prime Neuroptics Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Forma Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Saryn Prime Neuroptics Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Spira Prime Blueprint"
+            }
+        ],
+        "locations": [
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.3333
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.3333
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.2545
+            },
+            {
+                "location": "Void - Teshub",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Hepit",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1069
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1034
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1034
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Rare",
+                "chance": 0.0968
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0968
+            },
+            {
+                "location": "Level 5 - 15 Orb Vallis Bounty",
+                "rarity": "Rare",
+                "chance": 0.0833
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Tiwaz",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Stribog",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Level 5 - 15 Orb Vallis Bounty",
+                "rarity": "Rare",
+                "chance": 0.0201
+            }
+        ],
+        "vaulted": false,
+        "warframeMarket": null
+    },
+    {
+        "name": "Lith V6",
+        "rewards": [
+            {
+                "type": "Rare",
+                "chance": 0.02,
+                "item": "Valkyr Prime Chassis Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Saryn Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Forma Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Cernos Prime Grip"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Nikana Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Venka Prime Blades"
+            }
+        ],
+        "locations": [
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.3333
+            },
+            {
+                "location": "Level 15 - 25 Ghoul Bounty",
+                "rarity": "Common",
+                "chance": 0.3333
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.2545
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.2545
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Hepit",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Teshub",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Level 15 - 25 Ghoul Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1174
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.11109999999999999
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1069
+            },
+            {
+                "location": "Level 10 - 30 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1069
+            },
+            {
+                "location": "Level 10 - 30 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1034
+            },
+            {
+                "location": "Level 15 - 25 Ghoul Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.10289999999999999
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0968
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Rare",
+                "chance": 0.0968
+            },
+            {
+                "location": "Level 5 - 15 Orb Vallis Bounty",
+                "rarity": "Rare",
+                "chance": 0.0833
+            },
+            {
+                "location": "Level 5 - 15 Orb Vallis Bounty",
+                "rarity": "Rare",
+                "chance": 0.0833
+            },
+            {
+                "location": "Void - Stribog",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Tiwaz",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Level 5 - 15 Orb Vallis Bounty",
+                "rarity": "Rare",
+                "chance": 0.0201
+            },
+            {
+                "location": "Level 5 - 15 Orb Vallis Bounty",
+                "rarity": "Rare",
+                "chance": 0.0201
+            }
+        ],
+        "vaulted": false,
+        "warframeMarket": null
+    },
+    {
+        "name": "Meso N8",
+        "rewards": [
+            {
+                "type": "Rare",
+                "chance": 0.02,
+                "item": "Nikana Prime Hilt"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Valkyr Prime Neuroptics Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Cernos Prime String"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Valkyr Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Forma Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Cernos Prime Upper Limb"
+            }
+        ],
+        "locations": [
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.35710000000000003
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.34149999999999997
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.3333
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.25
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.22219999999999998
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.22219999999999998
+            },
+            {
+                "location": "Level 20 - 40 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.22219999999999998
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15960000000000002
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15630000000000002
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15050000000000002
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1474
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1368
+            },
+            {
+                "location": "Level 20 - 40 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.134
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0968
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Oxomoco",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Ukko",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Belenus",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Tiwaz",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Stribog",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0282
+            },
+            {
+                "location": "Void - Taranis",
+                "rarity": "Rare",
+                "chance": 0.0282
+            }
+        ],
+        "vaulted": false,
+        "warframeMarket": null
+    },
+    {
+        "name": "Neo S13",
+        "rewards": [
+            {
+                "type": "Rare",
+                "chance": 0.02,
+                "item": "Saryn Prime Chassis Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Cernos Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.11,
+                "item": "Forma Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Saryn Prime Systems Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Spira Prime Blueprint"
+            },
+            {
+                "type": "Uncommon",
+                "chance": 0.25,
+                "item": "Nikana Prime Blueprint"
+            }
+        ],
+        "locations": [
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5172
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5172
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Common",
+                "chance": 0.5172
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.35710000000000003
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.35710000000000003
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Common",
+                "chance": 0.35000000000000003
+            },
+            {
+                "location": "Level 40 - 50 Ghoul Bounty",
+                "rarity": "Common",
+                "chance": 0.3333
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1852
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1852
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1852
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1648
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1648
+            },
+            {
+                "location": "Level 30 - 50 Orb Vallis Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1648
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15960000000000002
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15960000000000002
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15630000000000002
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.15630000000000002
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1458
+            },
+            {
+                "location": "Level 30 - 50 Cetus Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1429
+            },
+            {
+                "location": "Void - Mot",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Mithra",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Mithra",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Mot",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Void - Belenus",
+                "rarity": "Uncommon",
+                "chance": 0.125
+            },
+            {
+                "location": "Level 40 - 50 Ghoul Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.1174
+            },
+            {
+                "location": "Level 40 - 50 Ghoul Bounty",
+                "rarity": "Uncommon",
+                "chance": 0.10289999999999999
+            },
+            {
+                "location": "Void - Belenus",
+                "rarity": "Rare",
+                "chance": 0.0968
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Belenus",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Oxomoco",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Ukko",
+                "rarity": "Rare",
+                "chance": 0.0625
+            },
+            {
+                "location": "Void - Aten",
+                "rarity": "Rare",
+                "chance": 0.0588
+            },
+            {
+                "location": "Void - Marduk",
+                "rarity": "Rare",
+                "chance": 0.0588
+            },
+            {
+                "location": "Void - Ani",
+                "rarity": "Rare",
+                "chance": 0.0282
+            }
+        ],
+        "vaulted": false,
+        "warframeMarket": null
+    }
+]
