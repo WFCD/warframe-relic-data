@@ -3790,7 +3790,10 @@
             }
         ],
         "vaulted": false,
-        "warframeMarket": null
+        "warframeMarket": {
+            "id": "5d8765de7ea27b08950c13bb",
+            "urlName": "axi_s5_intact"
+        }
     },
     {
         "name": "Axi T1",
@@ -4595,7 +4598,10 @@
             }
         ],
         "vaulted": false,
-        "warframeMarket": null
+        "warframeMarket": {
+            "id": "5d8765de7ea27b08950c13be",
+            "urlName": "axi_v9_intact"
+        }
     },
     {
         "name": "Lith A1",
@@ -6019,7 +6025,10 @@
             }
         ],
         "vaulted": false,
-        "warframeMarket": null
+        "warframeMarket": {
+            "id": "5d8765de7ea27b08950c13c2",
+            "urlName": "lith_c5_intact"
+        }
     },
     {
         "name": "Lith F1",
@@ -12757,7 +12766,10 @@
             }
         ],
         "vaulted": false,
-        "warframeMarket": null
+        "warframeMarket": {
+            "id": "5d8765df7ea27b08950c13c9",
+            "urlName": "meso_n8_intact"
+        }
     },
     {
         "name": "Meso O1",
@@ -19555,7 +19567,10 @@
             }
         ],
         "vaulted": false,
-        "warframeMarket": null
+        "warframeMarket": {
+            "id": "5d8765de7ea27b08950c13ba",
+            "urlName": "neo_s13_intact"
+        }
     },
     {
         "name": "Neo S2",
