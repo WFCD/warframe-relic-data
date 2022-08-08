@@ -1,5 +1,8 @@
 # warframe-relic-data
 
+[![GitHub license](https://img.shields.io/github/license/TitaniaProject/warframe-relic-data?style=for-the-badge)](https://github.com/TitaniaProject/warframe-relic-data/blob/master/License)
+[![Warframe Version](https://img.shields.io/badge/dynamic/json?color=blueviolet&label=Warframe%20Version&query=%24.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FTitaniaProject%2Fwarframe-relic-data%2Fdevelopment%2Fdata%2Fversion.json&style=for-the-badge)](https://github.com/TitaniaProject/warframe-relic-data/blob/development/data/version.json)
+
 ## Information
 
 This version is mainly a proof of concept for potentially being added into [WFCD/warframe-items](https://github.com/WFCD/warframe-items).
