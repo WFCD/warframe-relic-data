@@ -13,6 +13,7 @@ async function run(){
     if(needsUpdate){
         console.log("Found update, starting generation");
         await generator.generate();
+        await generator.writeData();
         await versionManager.writeVersion(date);
     }
     else {

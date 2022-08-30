@@ -9,11 +9,15 @@ class VersionManager {
     versionPath: string;
     versionRawPath: string;
     hashPath: string;
-    constructor(){
-        const dataDir = path.join(__dirname, "..", "data");
-        this.versionPath = path.join(dataDir, "version.json");
-        this.versionRawPath = path.join(dataDir, "version.txt");
-        this.hashPath = path.join(dataDir, "hash.json");
+    /**
+     * Creates a new VersionManager instance.
+     * @param dataDir Folder to write version information to. 
+     */
+    constructor(dataDir?: string){
+        const DataDir = dataDir ?? path.join(__dirname, "..", "data");
+        this.versionPath = path.join(DataDir, "version.json");
+        this.versionRawPath = path.join(DataDir, "version.txt");
+        this.hashPath = path.join(DataDir, "hash.json");
     }
 
     /**

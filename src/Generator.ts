@@ -16,20 +16,19 @@ class Generator {
     }
 
     /**
-     * Main function to fetch, generate and write the relic data
+     * Main function to fetch and generate the relic data
      */
-    async generate(): Promise<void> {
+    public async generate(): Promise<void> {
         console.log("Starting Generation");
         await this.fetchRawData();
         this.filterWFCDRelics();
         this.generateTitaniaRelics();
-        await this.writeData();
     }
 
     /**
      * Fetches all required data from WFCD and WFM.
      */
-    private async fetchRawData(): Promise<void> {
+    public async fetchRawData(): Promise<void> {
         const relicRequest = await fetch(Config.warframeRelicDropUrl);
         if(!relicRequest.ok){
             console.error("Failed to fetch Warframe relics from WFCD !");
@@ -56,7 +55,7 @@ class Generator {
     /**
      * Generates the relic data (uses WFCD/warframe-drop-data to check what relics exist, and adds information from WFCD/warframe-items and WFM)
      */
-    private generateTitaniaRelics(): void {
+    public generateTitaniaRelics(): void {
         if(typeof this.relicsRaw === "undefined" || typeof this.wfmItems === "undefined"){
             console.log("Failed to load relics/item data");
             return;
@@ -75,13 +74,19 @@ class Generator {
 
     /**
      * Writes the fully generated data to disk.
+     * @param dataDir Directory to store the relic data in. Default: ../data/
+     * @param fileName Filename base ex: "Relics" becomes "Relics.json" and "Relics.min.json". Default: "Relics"
+     * @param generateMin True if a minified json should be generated too. Default: true
      */
-    private async writeData(){
-        const DataDir = path.join(__dirname, "..", "data");
-        const RelicPath = path.join(DataDir, "Relics.json");
-        const RelicMinPath = path.join(DataDir, "Relics.min.json");
+    public async writeData(dataDir?: string, fileName?: string, generateMin?: boolean){
+        const DataDir = dataDir ?? path.join(__dirname, "..", "data");
+        const RelicPath = fileName ? path.join(DataDir, `${fileName}.json`) : path.join(DataDir, "Relics.json");
         await fs.writeFile(RelicPath, JSON.stringify(this.relics, null, 4));
-        await fs.writeFile(RelicMinPath, JSON.stringify(this.relics));
+
+        if(generateMin){
+            const RelicMinPath = fileName ? path.join(DataDir, `${fileName}.min.json`) : path.join(DataDir, "Relics.min.json");
+            await fs.writeFile(RelicMinPath, JSON.stringify(this.relics));
+        }
     }
 
     /**
