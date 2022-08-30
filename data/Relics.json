@@ -14928,27 +14928,27 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Bendar Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Iota Temple (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Korm's Belt (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Ogal Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Sover Strait (Caches)"
             },
             {
@@ -16566,27 +16566,27 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Bendar Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Iota Temple (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Korm's Belt (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Ogal Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Sover Strait (Caches)"
             },
             {
@@ -18128,6 +18128,31 @@
             },
             {
                 "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Bendar Cluster (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Iota Temple (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Korm's Belt (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Ogal Cluster (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Sover Strait (Caches)"
+            },
+            {
+                "rarity": "Rare",
                 "chance": 0.0588,
                 "location": "Venus/Falling Glory (Skirmish), Rotation B"
             },
@@ -18135,31 +18160,6 @@
                 "rarity": "Rare",
                 "chance": 0.0588,
                 "location": "Venus/Luckless Expanse (Skirmish), Rotation B"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Bendar Cluster (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Iota Temple (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Korm's Belt (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Ogal Cluster (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Sover Strait (Caches)"
             },
             {
                 "rarity": "Rare",
@@ -18734,33 +18734,33 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0526,
-                "location": "Venus/Falling Glory (Skirmish), Rotation C"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Bendar Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Iota Temple (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Korm's Belt (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Ogal Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Sover Strait (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.0526,
+                "location": "Venus/Falling Glory (Skirmish), Rotation C"
             },
             {
                 "rarity": "Rare",
@@ -20833,33 +20833,33 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0526,
-                "location": "Venus/Falling Glory (Skirmish), Rotation C"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Bendar Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Iota Temple (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Korm's Belt (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Ogal Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Sover Strait (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.0526,
+                "location": "Venus/Falling Glory (Skirmish), Rotation C"
             },
             {
                 "rarity": "Rare",
@@ -22814,6 +22814,31 @@
             },
             {
                 "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Bendar Cluster (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Iota Temple (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Korm's Belt (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Ogal Cluster (Caches)"
+            },
+            {
+                "rarity": "Rare",
+                "chance": 0.05,
+                "location": "Earth/Sover Strait (Caches)"
+            },
+            {
+                "rarity": "Rare",
                 "chance": 0.0588,
                 "location": "Venus/Falling Glory (Skirmish), Rotation B"
             },
@@ -22821,31 +22846,6 @@
                 "rarity": "Rare",
                 "chance": 0.0588,
                 "location": "Venus/Luckless Expanse (Skirmish), Rotation B"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Bendar Cluster (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Iota Temple (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Korm's Belt (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Ogal Cluster (Caches)"
-            },
-            {
-                "rarity": "Rare",
-                "chance": 0.0599,
-                "location": "Earth/Sover Strait (Caches)"
             },
             {
                 "rarity": "Rare",
@@ -24371,27 +24371,27 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Bendar Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Iota Temple (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Korm's Belt (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Ogal Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0599,
+                "chance": 0.05,
                 "location": "Earth/Sover Strait (Caches)"
             },
             {
@@ -30817,7 +30817,27 @@
             {
                 "rarity": "Uncommon",
                 "chance": 0.1429,
+                "location": "Europa/Paimon (Defense), Rotation A"
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 0.1429,
+                "location": "Jupiter/Io (Defense), Rotation A"
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 0.1429,
                 "location": "Mars/Olympus (Disruption), Rotation C"
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 0.1429,
+                "location": "Saturn/Helene (Defense), Rotation A"
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 0.1429,
+                "location": "Sedna/Camenae (Defense), Rotation A"
             },
             {
                 "rarity": "Uncommon",
@@ -31780,27 +31800,27 @@
         "locations": [
             {
                 "rarity": "Rare",
-                "chance": 0.06,
+                "chance": 0.05,
                 "location": "Earth/Bendar Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.06,
+                "chance": 0.05,
                 "location": "Earth/Iota Temple (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.06,
+                "chance": 0.05,
                 "location": "Earth/Korm's Belt (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.06,
+                "chance": 0.05,
                 "location": "Earth/Ogal Cluster (Caches)"
             },
             {
                 "rarity": "Rare",
-                "chance": 0.06,
+                "chance": 0.05,
                 "location": "Earth/Sover Strait (Caches)"
             },
             {
@@ -40022,7 +40042,7 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0513,
+                "chance": 0.0488,
                 "location": "Pluto/Obol Crossing (Skirmish), Rotation C"
             },
             {
@@ -44403,7 +44423,7 @@
             },
             {
                 "rarity": "Rare",
-                "chance": 0.0513,
+                "chance": 0.0488,
                 "location": "Pluto/Obol Crossing (Skirmish), Rotation C"
             },
             {
