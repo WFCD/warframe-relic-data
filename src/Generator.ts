@@ -17,12 +17,14 @@ class Generator {
 
     /**
      * Main function to fetch and generate the relic data
+     * @returns The Relics data array
      */
-    public async generate(): Promise<void> {
+    public async generate(): Promise<Array<TitaniaRelic>> {
         console.log("Starting Generation");
         await this.fetchRawData();
         this.filterWFCDRelics();
         this.generateTitaniaRelics();
+        return this.relics;
     }
 
     /**

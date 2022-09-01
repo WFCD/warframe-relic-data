@@ -38,6 +38,8 @@ await generator.writeData("./", "Relic", true);
 ```
 The generated data would now be in `./Relic.json` and `./Relic.min.json`.
 
+As alternative, `Generator.generate()` returns the full relic data array directly for use in other modules.
+
 For conviniece this module provides a version checker, which can determine if any of api data is updated.
 
 Example:
