@@ -8,6 +8,7 @@ const node_path_1 = __importDefault(require("node:path"));
 const promises_1 = __importDefault(require("node:fs/promises"));
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const Config_1 = require("./Config");
+const Logger_1 = __importDefault(require("./Logger"));
 class VersionManager {
     versionPath;
     versionRawPath;
@@ -28,8 +29,7 @@ class VersionManager {
     async updateNeeded() {
         const infoReq = await (0, node_fetch_1.default)(Config_1.Config.warframeRelicDropInfoUrl);
         if (!infoReq.ok) {
-            console.error("Failed to fetch version info !");
-            throw new Error("Failed to complete version check !");
+            Logger_1.default.fatal("Failed to fetch version info!");
         }
         const info = await infoReq.json();
         try {
@@ -49,7 +49,7 @@ class VersionManager {
     async writeVersion(timestamp) {
         const patchLogsReq = await (0, node_fetch_1.default)(Config_1.Config.warframePatchlogsUrl);
         if (!patchLogsReq.ok) {
-            console.error("Failed to fetch patchlogs");
+            Logger_1.default.error("Failed to fetch patchlogs");
             return;
         }
         const patchlogs = await patchLogsReq.json();
@@ -58,7 +58,7 @@ class VersionManager {
         const version = patchlogs[0].name.replace(/ \+ /g, '--').replace(/[^0-9\-.]/g, '').trim();
         const hashReq = await (0, node_fetch_1.default)(Config_1.Config.warframeRelicDropInfoUrl);
         if (!hashReq.ok) {
-            console.error("Failed to fetch hashInfo");
+            Logger_1.default.error("Failed to fetch hashInfo");
             return;
         }
         const hashInfo = await hashReq.json();
@@ -67,7 +67,7 @@ class VersionManager {
         await promises_1.default.writeFile(this.hashPath, JSON.stringify(hashFile, null, 2), "utf-8");
         await promises_1.default.writeFile(this.versionPath, JSON.stringify(versionInfo, null, 2), "utf-8");
         await promises_1.default.writeFile(this.versionRawPath, version, "utf-8");
-        console.log("Finished writing version info");
+        Logger_1.default.debug("Finished writing version info");
     }
 }
 exports.VersionManager = VersionManager;

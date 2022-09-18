@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs/promises";
 import fetch from "node-fetch";
 import { Config } from "./Config";
-
+import logger from './Logger';
 
 class VersionManager {
 
@@ -26,8 +26,7 @@ class VersionManager {
     async updateNeeded(): Promise<boolean> {
         const infoReq = await fetch(Config.warframeRelicDropInfoUrl);
         if(!infoReq.ok){
-            console.error("Failed to fetch version info !");
-            throw new Error("Failed to complete version check !");
+            logger.fatal("Failed to fetch version info!");
         }
         const info: { hash: string, timestamp: string, modified: string } = await infoReq.json();
 
@@ -50,7 +49,7 @@ class VersionManager {
     async writeVersion(timestamp: number): Promise<void> {
         const patchLogsReq = await fetch(Config.warframePatchlogsUrl);
         if(!patchLogsReq.ok){
-            console.error("Failed to fetch patchlogs");
+            logger.error("Failed to fetch patchlogs");
             return;
         }
         const patchlogs = await patchLogsReq.json();
@@ -61,7 +60,7 @@ class VersionManager {
         
         const hashReq = await fetch(Config.warframeRelicDropInfoUrl);
         if(!hashReq.ok){
-            console.error("Failed to fetch hashInfo");
+            logger.error("Failed to fetch hashInfo");
             return;
         }
         const hashInfo: { hash: string, modified: string } = await hashReq.json();
@@ -71,7 +70,7 @@ class VersionManager {
         await fs.writeFile(this.hashPath, JSON.stringify(hashFile, null, 2), "utf-8");
         await fs.writeFile(this.versionPath, JSON.stringify(versionInfo, null, 2), "utf-8");
         await fs.writeFile(this.versionRawPath, version, "utf-8");
-        console.log("Finished writing version info");
+        logger.debug("Finished writing version info");
     }
 }
 

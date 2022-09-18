@@ -1,6 +1,6 @@
 import { Generator } from "./Generator";
 import { VersionManager } from "./VersionManager";
-
+import logger from './Logger';
 /**
  * Entrypoint for the build process.
  */
@@ -8,19 +8,19 @@ async function run(){
     const generator = new Generator();
     const versionManager = new VersionManager();
     const date = Date.now();
-    console.log(`Starting build ${date}`);
+    logger.log(`Starting build ${date}`);
     const needsUpdate = await versionManager.updateNeeded();
     if(needsUpdate){
-        console.log("Found update, starting generation");
+        logger.log("Found update, starting generation");
         await generator.generate();
         await generator.writeData();
         await versionManager.writeVersion(date);
     }
     else {
-        console.log("No updates found !");
+        logger.log("No updates found !");
     }
-    console.log("Build finished.")
+    logger.log("Build finished.")
     
 }
 
-run().catch(x => console.error(x));
+run().catch(logger.error);
