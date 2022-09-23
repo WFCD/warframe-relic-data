@@ -3,7 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { Config } from "./Config";
 import { TitaniaRelic, TitaniaRelicLocation, TitaniaRelicReward, TitaniaRelicRewardItem, WarframeMarketRoot, WFCDItem, WFCDRelic } from "./Types";
-
+import logger from './Logger';
 
 class Generator {
 
@@ -20,7 +20,7 @@ class Generator {
      * @returns The Relics data array
      */
     public async generate(): Promise<Array<TitaniaRelic>> {
-        console.log("Starting Generation");
+        logger.log("Starting Generation");
         await this.fetchRawData();
         this.filterWFCDRelics();
         this.generateTitaniaRelics();
@@ -33,7 +33,7 @@ class Generator {
     public async fetchRawData(): Promise<void> {
         const relicRequest = await fetch(Config.warframeRelicDropUrl);
         if(!relicRequest.ok){
-            console.error("Failed to fetch Warframe relics from WFCD !");
+            logger.error("Failed to fetch Warframe relics from WFCD!");
             return;
         }
         this.relicsRaw = (await relicRequest.json()).relics as Array<WFCDRelic>;
@@ -41,14 +41,14 @@ class Generator {
 
         const wfmRequest = await fetch(Config.warframeMarketItemUrl);
         if(!wfmRequest.ok){
-            console.error("Failed to fetch items from WFM !")
+            logger.error("Failed to fetch items from WFM!")
             return;
         }
         this.wfmItems = await wfmRequest.json() as WarframeMarketRoot;
 
         const wfcdItemRequest = await fetch(Config.warframeItemsUrl);
         if(!wfcdItemRequest.ok){
-            console.error("Failed to fetch items from WFCD! ");
+            logger.error("Failed to fetch items from WFCD! ");
             return;
         }
         this.wfcdItems = await wfcdItemRequest.json() as Array<WFCDItem>;
@@ -59,19 +59,19 @@ class Generator {
      */
     public generateTitaniaRelics(): void {
         if(typeof this.relicsRaw === "undefined" || typeof this.wfmItems === "undefined"){
-            console.log("Failed to load relics/item data");
+            logger.log("Failed to load relics/item data");
             return;
         }
         const length = this.relicsRaw.length;
 
         for(let i = 0; i < length; ++i){
             const rawRelic = this.relicsRaw[i];
-            console.log(`[${i + 1}/${length}] ${rawRelic.tier} ${rawRelic.relicName}`);
+            logger.debug(`[${i + 1}/${length}] ${rawRelic.tier} ${rawRelic.relicName}`);
             
             const relic = this.generateTitaniaRelic(rawRelic);
             this.relics.push(relic);
         }
-        console.log(`Finished parsing ${this.relics.length} relics`);
+        logger.debug(`Finished parsing ${this.relics.length} relics`);
     }
 
     /**
@@ -102,7 +102,7 @@ class Generator {
             const rarity = rawReward.rarity;
             const wfmInfo = this.wfmItems?.payload.items.find(x => x.item_name === rawReward.itemName);
             if(!wfmInfo && !["Forma", "Kuva", "Exilus", "Riven"].find(x => rawReward.itemName.toLowerCase().includes(x.toLowerCase()))){
-                console.error(`Failed to find wfm item for ${rawReward.itemName}`);
+                logger.debug(`Failed to find wfm item for ${rawReward.itemName}`);
             }
 
             const item: TitaniaRelicRewardItem = { name: rawReward.itemName, warframeMarket: null}
@@ -118,7 +118,7 @@ class Generator {
         const wfcdItem = this.wfcdItems?.find(x => x.name.toLowerCase() === `${name.trim()} Intact`.toLowerCase());
         
         if(!wfcdItem){
-            console.error("Failed to get WFCD item for relic: " + name);
+            logger.error("Failed to get WFCD item for relic: " + name);
         }
 
         if(wfcdItem && wfcdItem.drops){
@@ -129,7 +129,7 @@ class Generator {
 
         const wfm = this.wfmItems?.payload.items.find(x => x.item_name === `${name.trim()} Relic`);
         if(!wfm){
-            console.error("Failed to get relic item from wfm: " + name);
+            logger.error("Failed to get relic item from wfm: " + name);
         }
 
         return { name, rewards, locations: drops, vaultInfo: { vaulted: drops.length == 0, vaultDate: ""}, warframeMarket: { id: wfm?.id!, urlName: wfm?.url_name!}};
@@ -141,7 +141,7 @@ class Generator {
     private filterWFCDRelics(){
         const before = this.relicsRaw?.length;
         this.relicsRaw = this.relicsRaw?.filter(x => x.state === "Intact");
-        console.log(`Filtered relics to intact variants. Before: ${before} After: ${this.relicsRaw?.length}`)
+        logger.log(`Filtered relics to intact variants. Before: ${before} After: ${this.relicsRaw?.length}`)
     }
 }
 
