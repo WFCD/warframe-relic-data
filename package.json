@@ -1,5 +1,5 @@
 {
-  "name": "warframe-relic-data",
+  "name": "@wfcd/relics",
   "version": "2.0.0",
   "description": "Relic Data for Warframe",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TitaniaProject/warframe-relic-data.git"
+    "url": "git+https://github.com/WFCD/warframe-relic-data.git"
   },
   "keywords": [
     "Warframe",
@@ -20,9 +20,9 @@
   "author": "Soundofdarkness",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TitaniaProject/warframe-relic-data/issues"
+    "url": "https://github.com/WFCD/warframe-relic-data/issues"
   },
-  "homepage": "https://github.com/TitaniaProject/warframe-relic-data#readme",
+  "homepage": "https://github.com/WFCD/warframe-relic-data#readme",
   "devDependencies": {
     "@types/node": "^18.6.4",
     "@types/node-fetch": "^2.6.2",
