@@ -5,7 +5,8 @@
 
 ## Information
 
-This version is mainly a proof of concept for potentially being added into [WFCD/warframe-items](https://github.com/WFCD/warframe-items).
+This repository is part of the build process for [warframe-items](https://github.com/WFCD/warframe-items), 
+but it does work standalone too.
 So far this repository is probably not complete and is not stable.
 No build is automatically ran either, so the data is probably quite outdated.
 
