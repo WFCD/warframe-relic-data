@@ -1,0 +1,24 @@
+name: Actions
+on:
+  pull_request:
+    branches:
+      - development
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['lts/*']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run linters
+        run: npm run lint
+      - name: Run Build
+        run: npm run build

@@ -1,0 +1,30 @@
+name: Release
+on:
+  push:
+    branches:
+      - development
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - run: npm ci
+      - run: npm run lint
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2.7.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        with:
+          semantic_version: 17
+          branches: |
+            ['development']
+          extra_plugins: |
+            @semantic-release/git
+            @semantic-release/changelog
