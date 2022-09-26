@@ -16,6 +16,8 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
       - run: npm ci
       - run: npm run lint
+      - run: npm run verify
+      - run: npm test
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2.7.0
         env:
