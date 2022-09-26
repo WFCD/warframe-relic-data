@@ -3,11 +3,18 @@
   "version": "2.0.0",
   "description": "Relic Data for Warframe",
   "main": "dist/index.js",
+  "files": [
+    "dist/*",
+    "dist/!*.ts"
+  ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "build": "tsc",
-    "start": "npm run build && node dist/build.js"
+    "start": "npm run build && node dist/build.js",
+    "postinstall": "install-peerdeps github:wfcd/eslint-config#ts-support -S",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -26,9 +33,31 @@
   "devDependencies": {
     "@types/node": "^18.6.4",
     "@types/node-fetch": "^2.6.2",
+    "@wfcd/eslint-config": "github:wfcd/eslint-config#ts-support",
+    "install-peerdeps": "^2.0.2",
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "warframe-patchlogs": "^1.768.0"
+  },
+  "eslintIgnore": ["dist/**"],
+  "eslintConfig": {
+    "extends": [
+      "@wfcd/eslint-config/typescript"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  },
+  "prettier": "@wfcd/eslint-config/prettier",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods"
+    ]
   }
 }
