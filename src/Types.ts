@@ -81,6 +81,9 @@ export interface WFCDItem {
    */
   name: string;
 
+  /** Unique identifying name */
+  uniqueName: string;
+
   /**
    * Item Drop Location
    */
@@ -135,6 +138,9 @@ export interface TitaniaRelic {
    * Relic Vault Information
    */
   vaultInfo: TitaniaRelicVaultedInfo;
+
+  /** unique name for corresponding warframe-items Item */
+  uniqueName: string;
 }
 
 export interface TitaniaRelicReward {
@@ -159,6 +165,9 @@ export interface TitaniaRelicRewardItem {
    * Item Name
    */
   name: string;
+
+  /** unique name for corresponding warframe-items Item */
+  uniqueName: string;
 
   /**
    * WarframeMarket Info

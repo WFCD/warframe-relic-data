@@ -117,14 +117,20 @@ export default class Generator {
       const { chance } = rawReward;
       const { rarity } = rawReward;
       const wfmInfo = this.wfmItems?.payload.items.find((x) => x.item_name === rawReward.itemName);
-      if (
-        !wfmInfo &&
-        !['Forma', 'Kuva', 'Exilus', 'Riven'].find((x) => rawReward.itemName.toLowerCase().includes(x.toLowerCase()))
-      ) {
+      const isSpecial = ['Forma', 'Kuva', 'Exilus', 'Riven'].find((x) =>
+        // eslint-disable-next-line @typescript-eslint/comma-dangle
+        rawReward.itemName.toLowerCase().includes(x.toLowerCase())
+      );
+      if (!(wfmInfo || isSpecial)) {
         logger.debug(`Failed to find wfm item for ${rawReward.itemName}`);
       }
 
-      const item: TitaniaRelicRewardItem = { name: rawReward.itemName, warframeMarket: undefined };
+      const item: TitaniaRelicRewardItem = {
+        name: rawReward.itemName,
+        uniqueName:
+          this.wfcdItems?.find((x) => x.name.toLowerCase() === `${name.trim()} Intact`.toLowerCase())?.uniqueName || '',
+        warframeMarket: undefined,
+      };
       if (wfmInfo) {
         item.warframeMarket = { id: wfmInfo.id, urlName: wfmInfo.url_name };
       }
@@ -153,6 +159,7 @@ export default class Generator {
       name,
       rewards,
       locations: drops,
+      uniqueName: wfcdItem?.uniqueName || '',
       vaultInfo: { vaulted: drops.length === 0, vaultDate: '' },
       ...(wfm?.id && wfm?.url_name && { warframeMarket: { id: wfm?.id, urlName: wfm?.url_name } }),
     };
