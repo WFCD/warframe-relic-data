@@ -17,7 +17,7 @@
     "lint:fix": "eslint . --fix",
     "postinstall": "install-peerdeps @wfcd/eslint-config@^1.2.0 -S",
     "prepack": "npm run build",
-    "start": "npm run build && node dist/build.js",
+    "start": "npm run build && node dist/Build.js",
     "test": "nyc mocha",
     "validate": "tsc --build --dry"
   },
