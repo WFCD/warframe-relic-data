@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "files": [
     "dist/*",
-    "dist/!*.ts"
+    "!dist/*.ts",
+    "!dist/spec/**",
+    "dist/index.d.ts"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
@@ -14,7 +16,8 @@
     "start": "npm run build && node dist/build.js",
     "postinstall": "install-peerdeps github:wfcd/eslint-config#ts-support -S",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
