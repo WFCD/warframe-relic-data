@@ -13,7 +13,7 @@ import {
 import Config from './Config';
 import logger from './Logger';
 
-export default class Generator {
+export class Generator {
   relicsRaw: Array<WFCDRelic> | undefined;
 
   wfcdItems: Array<WFCDItem> | undefined;
@@ -174,3 +174,5 @@ export default class Generator {
     logger.log(`Filtered relics to intact variants. Before: ${before} After: ${this.relicsRaw?.length || 0}`);
   }
 }
+
+export default Generator;

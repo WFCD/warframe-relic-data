@@ -14,7 +14,7 @@ interface DropsInfoFile {
   hash: string;
 }
 
-export default class VersionManager {
+export class VersionManager {
   versionPath: string;
 
   versionRawPath: string;
@@ -87,3 +87,5 @@ export default class VersionManager {
     logger.debug('Finished writing version info');
   }
 }
+
+export default VersionManager;

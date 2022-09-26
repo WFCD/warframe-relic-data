@@ -1,5 +1,5 @@
-import Generator from './Generator';
-import VersionManager from './VersionManager';
+import { Generator } from './Generator';
+import { VersionManager } from './VersionManager';
 import logger from './Logger';
 
 /**
