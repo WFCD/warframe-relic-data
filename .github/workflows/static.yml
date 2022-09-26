@@ -18,6 +18,6 @@ jobs:
       - name: Run linters
         run: npm run lint
       - name: Run Build
-        run: npm run verify
+        run: npm run validate
       - name: Test
         run: npm test
