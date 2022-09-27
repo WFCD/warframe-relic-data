@@ -7,7 +7,7 @@
     "dist/*",
     "!dist/*.ts",
     "!dist/spec/**",
-    "dist/index.d.ts"
+    "dist/**.d.ts"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
