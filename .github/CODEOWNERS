@@ -1,0 +1,5 @@
+package*.json @WFCD/node-libraries
+src/* @Soundofdarkness
+.github/workflows/* @TobiTenno
+.github/* @WFCD/node-libraries
+* @WFCD/node-libraries

@@ -1,209 +1,215 @@
-
-interface WarframeMarketRoot {
-    payload: {
-        items: Array<WarframeMarketItem>
-    }
+export interface WarframeMarketRoot {
+  payload: {
+    items: Array<WarframeMarketItem>;
+  };
 }
 
-interface WarframeMarketItem {
-    /**
-     * WFM Item ID
-     */
-    id: string,
+export interface WarframeMarketItem {
+  /**
+   * WFM Item ID
+   */
+  id: string;
 
-    /**
-     * Url name for querying WFM
-     */
-    url_name: string,
+  /**
+   * Url name for querying WFM
+   */
+  url_name: string;
 
-    /**
-     * Thumbnail URL relative to wfm api base
-     */
-    thumb: string,
+  /**
+   * Thumbnail URL relative to wfm api base
+   */
+  thumb: string;
 
-    /**
-     * Item Name
-     */
-    item_name: string
+  /**
+   * Item Name
+   */
+  item_name: string;
 }
 
-interface WFCDRelic {
-    /**
-     * Relic Tier (Axi, Neo, etc.)
-     */
-    tier: string,
+export interface WFCDRelic {
+  /**
+   * Relic Tier (Axi, Neo, etc.)
+   */
+  tier: string;
 
-    /**
-     * Relic Name (A1, A10, etc.)
-     */
-    relicName: string,
+  /**
+   * Relic Name (A1, A10, etc.)
+   */
+  relicName: string;
 
-    /**
-     * Relic Refinement state
-     */
-    state: "Intact" | "Exceptional" | "Flawless" | "Radiant",
+  /**
+   * Relic Refinement state
+   */
+  state: 'Intact' | 'Exceptional' | 'Flawless' | 'Radiant';
 
-    /**
-     * Relic Rewards
-     */
-    rewards: Array<WFCDRelicReward>,
+  /**
+   * Relic Rewards
+   */
+  rewards: Array<WFCDRelicReward>;
 
-    /**
-     * Internal WFCD id
-     */
-    _id: string
+  /**
+   * Internal WFCD id
+   */
+  _id: string;
 }
 
-interface WFCDRelicReward {
-    /**
-     * Dropped Item name
-     */
-    itemName: string,
+export interface WFCDRelicReward {
+  /**
+   * Dropped Item name
+   */
+  itemName: string;
 
-    /**
-     * Dropchance Rarity (Uncommon/Rare ?)
-     */
-    rarity: "Uncommon" | "Rare",
+  /**
+   * Dropchance Rarity (Uncommon/Rare ?)
+   */
+  rarity: 'Uncommon' | 'Rare';
 
-    /**
-     * Actual Dropchance in %
-     */
-    chance: number,
+  /**
+   * Actual Dropchance in %
+   */
+  chance: number;
 
-    /**
-     * Internal ID
-     */
-    _id: string
+  /**
+   * Internal ID
+   */
+  _id: string;
 }
 
-interface WFCDItem {
-    /**
-     * Item Name
-     */
-    name: string,
+export interface WFCDItem {
+  /**
+   * Item Name
+   */
+  name: string;
 
-    /**
-     * Item Drop Location
-     */
-    drops?: Array<WFCDItemDropLocation>
+  /** Unique identifying name */
+  uniqueName: string;
+
+  /**
+   * Item Drop Location
+   */
+  drops?: Array<WFCDItemDropLocation>;
 }
 
-interface WFCDItemDropLocation {
-    /**
-     * Dropchance in %
-     */
-    chance: number,
+export interface WFCDItemDropLocation {
+  /**
+   * Dropchance in %
+   */
+  chance: number;
 
-    /**
-     * Mission location
-     */
-    location: string,
+  /**
+   * Mission location
+   */
+  location: string;
 
-    /**
-     * Drop rarity 
-     */
-    rarity: string,
+  /**
+   * Drop rarity
+   */
+  rarity: string;
 
-    /**
-     * Relic Type
-     */
-    type: string
+  /**
+   * Relic Type
+   */
+  type: string;
 }
 
-interface TitaniaRelic {
-    /**
-     * Relic Combined Name (Ex: Axi A1)
-     */
-    name: string,
+export interface TitaniaRelic {
+  /**
+   * Relic Combined Name (Ex: Axi A1)
+   */
+  name: string;
 
-    /**
-     * Relic Rewards when opened
-     */
-    rewards: Array<TitaniaRelicReward>,
+  /**
+   * Relic Rewards when opened
+   */
+  rewards: Array<TitaniaRelicReward>;
 
-    /**
-     * Drop Locations for the relics
-     */
-    locations: Array<TitaniaRelicLocation>,
+  /**
+   * Drop Locations for the relics
+   */
+  locations: Array<TitaniaRelicLocation>;
 
-    /**
-     * Warframe Market Information
-     */
-    warframeMarket: TitaniaWFMInfo,
+  /**
+   * Warframe Market Information
+   *  undefined for untradable
+   */
+  warframeMarket?: TitaniaWFMInfo;
 
-    /**
-     * Relic Vault Information
-     */
-    vaultInfo: TitaniaRelicVaultedInfo
+  /**
+   * Relic Vault Information
+   */
+  vaultInfo: TitaniaRelicVaultedInfo;
+
+  /** unique name for corresponding warframe-items Item */
+  uniqueName: string;
 }
 
-interface TitaniaRelicReward {
-    /**
-     * Relic Rarity (Uncommon,Rare ?)
-     */
-    rarity: "Uncommon" | "Rare",
+export interface TitaniaRelicReward {
+  /**
+   * Relic Rarity (Uncommon,Rare ?)
+   */
+  rarity: 'Uncommon' | 'Rare';
 
-    /**
-     * Reward Drop Chance in %
-     */
-    chance: number,
+  /**
+   * Reward Drop Chance in %
+   */
+  chance: number;
 
-    /**
-     * Item Information
-     */
-    item: TitaniaRelicRewardItem
+  /**
+   * Item Information
+   */
+  item: TitaniaRelicRewardItem;
 }
 
-interface TitaniaRelicRewardItem {
-    /**
-     * Item Name
-     */
-    name: string,
+export interface TitaniaRelicRewardItem {
+  /**
+   * Item Name
+   */
+  name: string;
 
-    /**
-     * WarframeMarket Info
-     */
-    warframeMarket: TitaniaWFMInfo | null
+  /** unique name for corresponding warframe-items Item */
+  uniqueName: string;
+
+  /**
+   * WarframeMarket Info
+   */
+  warframeMarket?: TitaniaWFMInfo;
 }
 
-interface TitaniaRelicLocation {
-    /** Location Info $planet-$node (Ex: Eris - Phalan) */
-    location: string,
+export interface TitaniaRelicLocation {
+  /** Location Info $planet-$node (Ex: Eris - Phalan) */
+  location: string;
 
-    /**
-     * Rarity (Uncommon, Rare ?)
-     */
-    rarity: "Uncommon" | "Rare" | "Legendary" | "Common" | string,
+  /**
+   * Rarity (Uncommon, Rare ?)
+   */
+  rarity: 'Uncommon' | 'Rare' | 'Legendary' | 'Common' | string;
 
-    /**
-     * Dropchance in %
-     */
-    chance: number
+  /**
+   * Dropchance in %
+   */
+  chance: number;
 }
 
-interface TitaniaWFMInfo {
+export interface TitaniaWFMInfo {
+  /**
+   * Warframe Market ID
+   */
+  id: string;
 
-    /**
-     * Warframe Market ID
-     */
-    id: string,
-
-    /**
-     * Warframe market URL parameter
-     */
-    urlName: string
+  /**
+   * Warframe market URL parameter
+   */
+  urlName: string;
 }
 
-interface TitaniaRelicVaultedInfo {
-    /**
-     * If the relic is vaulted
-     */
-    vaulted: boolean,
+export interface TitaniaRelicVaultedInfo {
+  /**
+   * If the relic is vaulted
+   */
+  vaulted: boolean;
 
-    /**
-     * Vaulted Date
-     */
-    vaultDate: string
+  /**
+   * Vaulted Date
+   */
+  vaultDate: string;
 }
-
-export { WarframeMarketRoot, WarframeMarketItem, WFCDRelic, WFCDRelicReward, TitaniaRelic, TitaniaRelicLocation, TitaniaRelicReward, TitaniaRelicRewardItem, TitaniaRelicVaultedInfo, TitaniaWFMInfo, WFCDItem, WFCDItemDropLocation };
