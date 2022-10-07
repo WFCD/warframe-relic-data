@@ -207,9 +207,4 @@ export interface TitaniaRelicVaultedInfo {
    * If the relic is vaulted
    */
   vaulted: boolean;
-
-  /**
-   * Vaulted Date
-   */
-  vaultDate: string;
 }

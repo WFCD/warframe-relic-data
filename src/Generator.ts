@@ -160,7 +160,7 @@ export class Generator {
       rewards,
       locations: drops,
       uniqueName: wfcdItem?.uniqueName || '',
-      vaultInfo: { vaulted: drops.length === 0, vaultDate: '' },
+      vaultInfo: { vaulted: drops.length === 0 },
       ...(wfm?.id && wfm?.url_name && { warframeMarket: { id: wfm?.id, urlName: wfm?.url_name } }),
     };
   }
