@@ -5,10 +5,11 @@
   "main": "dist/index.js",
   "files": [
     "dist/index.d.ts",
+    "dist/index.mjs",
     "dist/index.js"
   ],
   "exports": {
-    "import": "./dist/index.js",
+    "import": "./dist/index.mjs",
     "require": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
@@ -134,6 +135,11 @@
     "dts": true,
     "clean": true,
     "keepNames": true,
-    "target": "node14"
+    "target": "node14",
+    "splitting": false,
+    "format": [
+      "cjs",
+      "esm"
+    ]
   }
 }
