@@ -20,7 +20,7 @@
     "prepack": "npm run build",
     "start": "npm run build && node dist/Build.js",
     "test": "nyc mocha",
-    "validate": "tsc --build --dry"
+    "validate": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
