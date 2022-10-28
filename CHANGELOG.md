@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/WFCD/warframe-relic-data/compare/v1.0.1...v2.0.0) (2022-10-28)
+
+
+### Features
+
+* **build:** use the tsup to build the project ([#26](https://github.com/WFCD/warframe-relic-data/issues/26)) ([2f41119](https://github.com/WFCD/warframe-relic-data/commit/2f411194f16e237bd5f55dc582c389c34c86d0fd))
+
+
+### BREAKING CHANGES
+
+* **build:** bundle files with tsup
+
 ## [1.0.1](https://github.com/WFCD/warframe-relic-data/compare/v1.0.0...v1.0.1) (2022-10-12)
 
 
