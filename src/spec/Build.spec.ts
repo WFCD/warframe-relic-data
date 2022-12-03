@@ -1,5 +1,5 @@
 import chai from 'chai';
-import { Generator } from '../index';
+import { Generator } from '..';
 
 chai.should();
 
