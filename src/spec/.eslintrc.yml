@@ -2,6 +2,6 @@ env:
   mocha: true
 parserOptions:
   project:
-    - ../../tsconfig.json
+    - tsconfig.json
 rules:
   '@typescript-eslint/no-unsafe-call': off
