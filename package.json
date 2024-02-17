@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "node-fetch": "^2.6.7",
-    "warframe-patchlogs": "^1.768.0"
+    "warframe-patchlogs": "^2.3.1"
   },
   "eslintIgnore": [
     "dist/**"
