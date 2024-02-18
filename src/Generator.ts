@@ -1,6 +1,8 @@
-import fetch from 'node-fetch';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+
+import fetch from 'node-fetch';
+
 import {
   TitaniaRelic,
   TitaniaRelicLocation,
@@ -9,6 +11,7 @@ import {
   WarframeMarketRoot,
   WFCDItem,
   WFCDRelic,
+  Rarity,
 } from './Types';
 import Config from './Config';
 import logger from './Logger';
@@ -146,7 +149,7 @@ export class Generator {
 
     if (wfcdItem && wfcdItem.drops) {
       drops = wfcdItem.drops.map((rawDrop) => {
-        return { rarity: rawDrop.rarity, chance: rawDrop.chance, location: rawDrop.location };
+        return { rarity: rawDrop.rarity as Rarity, chance: rawDrop.chance, location: rawDrop.location };
       });
     }
 

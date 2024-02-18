@@ -1,7 +1,9 @@
 import path from 'node:path';
 import fs from 'node:fs/promises';
+
 import fetch from 'node-fetch';
 import { PatchData } from 'warframe-patchlogs';
+
 import Config from './Config';
 import logger from './Logger';
 

@@ -27,15 +27,15 @@ const fromString = (logLevelIsh: string): LogLevel => {
 class Logger {
   private readonly logLevel: LogLevel = fromString(process.env.LOG_LEVEL || 'fatal');
 
-  log(message: string | unknown) {
+  log(message: string) {
     if (this.logLevel >= LogLevel.LOG) console.log(message);
   }
 
-  error(message: string | unknown) {
+  error(message: string) {
     if (this.logLevel >= LogLevel.ERROR) console.error(message);
   }
 
-  debug(message: string | unknown) {
+  debug(message: string) {
     if (this.logLevel === LogLevel.DEBUG) console.debug(message);
   }
 

@@ -175,6 +175,8 @@ export interface TitaniaRelicRewardItem {
   warframeMarket?: TitaniaWFMInfo;
 }
 
+export type Rarity = 'Uncommon' | 'Rare' | 'Legendary' | 'Common';
+
 export interface TitaniaRelicLocation {
   /** Location Info $planet-$node (Ex: Eris - Phalan) */
   location: string;
@@ -182,7 +184,7 @@ export interface TitaniaRelicLocation {
   /**
    * Rarity (Uncommon, Rare ?)
    */
-  rarity: 'Uncommon' | 'Rare' | 'Legendary' | 'Common' | string;
+  rarity: Rarity;
 
   /**
    * Dropchance in %
