@@ -1,3 +1,10 @@
+## [2.0.10](https://github.com/WFCD/warframe-relic-data/compare/v2.0.9...v2.0.10) (2024-02-18)
+
+
+### Bug Fixes
+
+* **ci:** clean up peerdeps invoke ([1f48164](https://github.com/WFCD/warframe-relic-data/commit/1f48164342287b54d3babb21fef3ed41af31c519))
+
 ## [2.0.9](https://github.com/WFCD/warframe-relic-data/compare/v2.0.8...v2.0.9) (2024-02-18)
 
 
