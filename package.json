@@ -18,7 +18,7 @@
     "coverage": "npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "npx --yes -p install-peerdeps@^2.0.3 install-peerdeps @wfcd/eslint-config@^1 -S",
+    "postinstall": "npx install-peerdeps @wfcd/eslint-config@latest -S",
     "prepack": "npm run build",
     "start": "npm run build && node dist/Build.js",
     "test": "nyc mocha",
