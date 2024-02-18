@@ -1,3 +1,10 @@
+## [2.0.9](https://github.com/WFCD/warframe-relic-data/compare/v2.0.8...v2.0.9) (2024-02-18)
+
+
+### Bug Fixes
+
+* remove install-peerdeps from dev deps ([5a9af27](https://github.com/WFCD/warframe-relic-data/commit/5a9af27fdb0db96c5bcaf560e7c01ea8d8b5c442))
+
 ## [2.0.8](https://github.com/WFCD/warframe-relic-data/compare/v2.0.7...v2.0.8) (2023-12-26)
 
 
