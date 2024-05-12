@@ -1,6 +1,6 @@
 {
   "name": "@wfcd/relics",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Relic Data for Warframe",
   "main": "dist/index.js",
   "files": [
