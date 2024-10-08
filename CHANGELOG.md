@@ -1,3 +1,10 @@
+## [2.0.16](https://github.com/WFCD/warframe-relic-data/compare/v2.0.15...v2.0.16) (2024-10-08)
+
+
+### Bug Fixes
+
+* bump warframe-patchlogs from 2.41.0 to 2.44.0 ([#255](https://github.com/WFCD/warframe-relic-data/issues/255)) ([0ac9a2f](https://github.com/WFCD/warframe-relic-data/commit/0ac9a2f42043921acc4aaa269ba400505ef1cdb3))
+
 ## [2.0.15](https://github.com/WFCD/warframe-relic-data/compare/v2.0.14...v2.0.15) (2024-08-24)
 
 
