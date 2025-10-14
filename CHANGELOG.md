@@ -1,3 +1,10 @@
+## [2.0.22](https://github.com/WFCD/warframe-relic-data/compare/v2.0.21...v2.0.22) (2025-10-14)
+
+
+### Bug Fixes
+
+* provenance & oidc ([#337](https://github.com/WFCD/warframe-relic-data/issues/337)) ([031e3b3](https://github.com/WFCD/warframe-relic-data/commit/031e3b319f7662f5c83121b6ec18e67fca268b51))
+
 ## [2.0.21](https://github.com/WFCD/warframe-relic-data/compare/v2.0.20...v2.0.21) (2025-03-01)
 
 
