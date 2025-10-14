@@ -24,10 +24,7 @@
     "test": "nyc mocha",
     "validate": "tsc --noEmit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WFCD/warframe-relic-data.git"
-  },
+  "repository": "https://github.com/WFCD/warframe-relic-data",
   "keywords": [
     "Warframe",
     "Relics"
@@ -140,5 +137,6 @@
       "cjs",
       "esm"
     ]
-  }
+  },
+  "publishConfig": { "provenance": true }
 }
