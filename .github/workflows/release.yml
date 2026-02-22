@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
+      # install the latest of v11 to fix npm ci issues
+      - run: npm i -g npm@11
       - run: npm ci
       - run: npm run lint
       - run: npm run validate
