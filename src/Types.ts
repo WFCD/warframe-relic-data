@@ -1,7 +1,5 @@
 export interface WarframeMarketRoot {
-  payload: {
-    items: Array<WarframeMarketItem>;
-  };
+  data: Array<WarframeMarketItem>;
 }
 
 export interface WarframeMarketItem {
@@ -13,17 +11,27 @@ export interface WarframeMarketItem {
   /**
    * Url name for querying WFM
    */
-  url_name: string;
+  slug: string;
 
   /**
-   * Thumbnail URL relative to wfm api base
+   * WFM language object
    */
-  thumb: string;
+  i18n: {
+    /**
+     * English language object
+     */
+    en: {
+      /**
+       * Item Name
+       */
+      name: string;
 
-  /**
-   * Item Name
-   */
-  item_name: string;
+      /**
+       * Thumbnail URL relative to wfm api base
+       */
+      thumb: string;
+    };
+  };
 }
 
 export interface WFCDRelic {

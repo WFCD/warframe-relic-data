@@ -95,7 +95,7 @@ export class Generator {
    * @param {string} fileName Filename base ex: "Relics" becomes "Relics.json" and "Relics.min.json". Default: "Relics"
    * @param {boolean} generateMin True if a minified json should be generated too. Default: true
    */
-  public async writeData(dataDir?: string, fileName?: string, generateMin?: boolean) {
+  public async writeData(dataDir?: string, fileName?: string, generateMin: boolean = true) {
     const DataDir = dataDir ?? path.join(__dirname, '..', 'data');
     const RelicPath = fileName ? path.join(DataDir, `${fileName}.json`) : path.join(DataDir, 'Relics.json');
     await fs.writeFile(RelicPath, JSON.stringify(this.relics, undefined, 4));
@@ -119,7 +119,7 @@ export class Generator {
     const rewards = rawRelic.rewards.map((rawReward) => {
       const { chance } = rawReward;
       const { rarity } = rawReward;
-      const wfmInfo = this.wfmItems?.payload.items.find((x) => x.item_name === rawReward.itemName);
+      const wfmInfo = this.wfmItems?.data.find((x) => x.i18n.en.name === rawReward.itemName);
       const isSpecial = ['Forma', 'Kuva', 'Exilus', 'Riven'].find((x) =>
         // eslint-disable-next-line @typescript-eslint/comma-dangle
         rawReward.itemName.toLowerCase().includes(x.toLowerCase())
@@ -135,7 +135,7 @@ export class Generator {
         warframeMarket: undefined,
       };
       if (wfmInfo) {
-        item.warframeMarket = { id: wfmInfo.id, urlName: wfmInfo.url_name };
+        item.warframeMarket = { id: wfmInfo.id, urlName: wfmInfo.slug };
       }
       return { rarity, chance, item } as TitaniaRelicReward;
     });
@@ -153,7 +153,7 @@ export class Generator {
       });
     }
 
-    const wfm = this.wfmItems?.payload.items.find((x) => x.item_name === `${name.trim()} Relic`);
+    const wfm = this.wfmItems?.data.find((x) => x.i18n.en.name === `${name.trim()} Relic`);
     if (!wfm) {
       logger.error(`Failed to get relic item from wfm: ${name}`);
     }
@@ -164,7 +164,7 @@ export class Generator {
       locations: drops,
       uniqueName: wfcdItem?.uniqueName || '',
       vaultInfo: { vaulted: drops.length === 0 },
-      ...(wfm?.id && wfm?.url_name && { warframeMarket: { id: wfm?.id, urlName: wfm?.url_name } }),
+      ...(wfm?.id && wfm?.slug && { warframeMarket: { id: wfm?.id, urlName: wfm?.slug } }),
     };
   }
 
