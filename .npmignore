@@ -1,0 +1,10 @@
+# Config Files
+.babelrc.json
+.eslintrc.json
+.eslintignore
+.mocharc.json
+.nvmrc
+.nycrc.json
+.prettierrc.json
+.releaserc.json
+tsdown.config.json

@@ -1,0 +1,7 @@
+{
+  "exit": true,
+  "spec": "src/spec/**/*.spec.ts",
+  "timeout": 1000,
+  "loader": "ts-node/esm",
+  "extension": "ts"
+}
