@@ -3,10 +3,7 @@ import path from 'node:path';
 
 import fetch from 'node-fetch';
 
-import Config from './Config';
-import logger from './Logger';
 import {
-  Rarity,
   TitaniaRelic,
   TitaniaRelicLocation,
   TitaniaRelicReward,
@@ -14,7 +11,10 @@ import {
   WarframeMarketRoot,
   WFCDItem,
   WFCDRelic,
+  Rarity,
 } from './Types';
+import Config from './Config';
+import logger from './Logger';
 
 export class Generator {
   relicsRaw: Array<WFCDRelic> | undefined;
@@ -95,7 +95,7 @@ export class Generator {
    * @param {string} fileName Filename base ex: "Relics" becomes "Relics.json" and "Relics.min.json". Default: "Relics"
    * @param {boolean} generateMin True if a minified json should be generated too. Default: true
    */
-  public async writeData(dataDir?: string, fileName?: string, generateMin: boolean = true) {
+  public async writeData(dataDir?: string, fileName?: string, generateMin?: boolean) {
     const DataDir = dataDir ?? path.join(__dirname, '..', 'data');
     const RelicPath = fileName ? path.join(DataDir, `${fileName}.json`) : path.join(DataDir, 'Relics.json');
     await fs.writeFile(RelicPath, JSON.stringify(this.relics, undefined, 4));
