@@ -1,14 +1,13 @@
 import chai from 'chai';
 
-import { Generator } from '..';
-
 chai.should();
 
 describe('Build', () => {
-  it('should not throw on construction', () => {
+  it('should not throw on construction', async () => {
+    const { Generator } = await import('..');
     (() => {
-      // eslint-disable-next-line no-new
-      new Generator();
+      const generator = new Generator();
+      chai.expect(generator).to.be.an.instanceof(Generator);
     }).should.not.throw();
   });
 });
