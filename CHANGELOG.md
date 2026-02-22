@@ -1,3 +1,10 @@
+## [2.0.26](https://github.com/WFCD/warframe-relic-data/compare/v2.0.25...v2.0.26) (2026-02-22)
+
+
+### Bug Fixes
+
+* **#361:** migrate to wfm v2 api ([#366](https://github.com/WFCD/warframe-relic-data/issues/366)) ([bf694b8](https://github.com/WFCD/warframe-relic-data/commit/bf694b859af1f18d6c0573681a8c05f4371ad5f8)), closes [#361](https://github.com/WFCD/warframe-relic-data/issues/361)
+
 ## [2.0.25](https://github.com/WFCD/warframe-relic-data/compare/v2.0.24...v2.0.25) (2025-12-13)
 
 
