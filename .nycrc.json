@@ -1,0 +1,11 @@
+{
+  "exclude": [
+    "src/spec/**",
+    "dist/**"
+  ],
+  "skip-full": true,
+  "reporter": [
+    "lcov",
+    "text"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "dts": true,
+  "clean": true,
+  "outputOptions": {
+    "keepNames": true
+  },
+  "target": "node14",
+  "splitting": false,
+  "format": [
+    "cjs",
+    "esm"
+  ]
+}

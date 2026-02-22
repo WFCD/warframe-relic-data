@@ -20,20 +20,16 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
+      # install the latest of v11 to fix npm ci issues
+      - run: npm i -g npm@11
       - run: npm ci
       - run: npm run lint
       - run: npm run validate
       - run: npm test
+      - name: Install Additional Dependencies
+        run: npm install @semantic-release/git @semantic-release/changelog
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v6
-        
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        with:
-          semantic_version: 18
-          branches: |
-            ['development']
-          extra_plugins: |
-            @semantic-release/git
-            @semantic-release/changelog
+        run: npx semantic-release
