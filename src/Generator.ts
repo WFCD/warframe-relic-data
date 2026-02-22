@@ -95,7 +95,7 @@ export class Generator {
    * @param {string} fileName Filename base ex: "Relics" becomes "Relics.json" and "Relics.min.json". Default: "Relics"
    * @param {boolean} generateMin True if a minified json should be generated too. Default: true
    */
-  public async writeData(dataDir?: string, fileName?: string, generateMin?: boolean) {
+  public async writeData(dataDir?: string, fileName?: string, generateMin: boolean = true) {
     const DataDir = dataDir ?? path.join(__dirname, '..', 'data');
     const RelicPath = fileName ? path.join(DataDir, `${fileName}.json`) : path.join(DataDir, 'Relics.json');
     await fs.writeFile(RelicPath, JSON.stringify(this.relics, undefined, 4));
