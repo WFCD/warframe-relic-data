@@ -1,3 +1,10 @@
+## [2.0.27](https://github.com/WFCD/warframe-relic-data/compare/v2.0.26...v2.0.27) (2026-02-22)
+
+
+### Bug Fixes
+
+* split configs, update to tsdown ([#368](https://github.com/WFCD/warframe-relic-data/issues/368)) ([ddf07bb](https://github.com/WFCD/warframe-relic-data/commit/ddf07bbb7b50d94b79307b7685324c7b7ca26ac4))
+
 ## [2.0.26](https://github.com/WFCD/warframe-relic-data/compare/v2.0.25...v2.0.26) (2026-02-22)
 
 
