@@ -2,9 +2,25 @@
 .babelrc.json
 .eslintrc.json
 .eslintignore
+.github/
+.gitignore
+.gitattributes
+.jshintignore
+.jshintrc
 .mocharc.json
 .nvmrc
 .nycrc.json
 .prettierrc.json
 .releaserc.json
 tsdown.config.json
+
+# Generated Data Files
+data/
+
+# Typescript files
+src/
+
+# IDE Files & Coverage
+.idea/
+.nyc_output
+coverage/
