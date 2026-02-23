@@ -1,3 +1,10 @@
+## [2.0.28](https://github.com/WFCD/warframe-relic-data/compare/v2.0.27...v2.0.28) (2026-02-23)
+
+
+### Bug Fixes
+
+* **#367:** add .toLowerCase to prevent silent misses ([#369](https://github.com/WFCD/warframe-relic-data/issues/369)) ([3505aad](https://github.com/WFCD/warframe-relic-data/commit/3505aada799265b157542db46a9a18bcd300f2aa)), closes [#367](https://github.com/WFCD/warframe-relic-data/issues/367)
+
 ## [2.0.27](https://github.com/WFCD/warframe-relic-data/compare/v2.0.26...v2.0.27) (2026-02-22)
 
 
