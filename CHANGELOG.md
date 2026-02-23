@@ -1,3 +1,10 @@
+## [2.0.29](https://github.com/WFCD/warframe-relic-data/compare/v2.0.28...v2.0.29) (2026-02-23)
+
+
+### Bug Fixes
+
+* pkg contents all dist ([#370](https://github.com/WFCD/warframe-relic-data/issues/370)) ([2217f4b](https://github.com/WFCD/warframe-relic-data/commit/2217f4b72b919d8cd9e57b88d9e7c4093d0cf550))
+
 ## [2.0.28](https://github.com/WFCD/warframe-relic-data/compare/v2.0.27...v2.0.28) (2026-02-23)
 
 
