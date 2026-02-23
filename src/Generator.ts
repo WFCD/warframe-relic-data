@@ -119,7 +119,9 @@ export class Generator {
     const rewards = rawRelic.rewards.map((rawReward) => {
       const { chance } = rawReward;
       const { rarity } = rawReward;
-      const wfmInfo = this.wfmItems?.data.find((x) => x.i18n.en.name === rawReward.itemName);
+      const wfmInfo = this.wfmItems?.data.find((x) => {
+        return x.i18n.en.name.toLowerCase() === rawReward.itemName.toLowerCase();
+      });
       const isSpecial = ['Forma', 'Kuva', 'Exilus', 'Riven'].find((x) =>
         // eslint-disable-next-line @typescript-eslint/comma-dangle
         rawReward.itemName.toLowerCase().includes(x.toLowerCase())
@@ -153,7 +155,9 @@ export class Generator {
       });
     }
 
-    const wfm = this.wfmItems?.data.find((x) => x.i18n.en.name === `${name.trim()} Relic`);
+    const wfm = this.wfmItems?.data.find((x) => {
+      return x.i18n.en.name.toLowerCase() === `${name.trim()} Relic`.toLowerCase();
+    });
     if (!wfm) {
       logger.error(`Failed to get relic item from wfm: ${name}`);
     }
