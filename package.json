@@ -46,7 +46,7 @@
     "precommit-hook": "^3.0.0",
     "ts-mocha": "^11.1.0",
     "tsconfig-paths": "^4.1.0",
-    "tsdown": "^0.21.0",
+    "tsdown": "^0.22.0",
     "tsx": "^4.21.0",
     "typescript": "^5.0.4"
   },
