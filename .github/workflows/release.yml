@@ -17,7 +17,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
       - name: Use Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version-file: '.nvmrc'
       # install the latest of v11 to fix npm ci issues
