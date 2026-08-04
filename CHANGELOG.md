@@ -1,3 +1,10 @@
+## [2.0.30](https://github.com/WFCD/warframe-relic-data/compare/v2.0.29...v2.0.30) (2026-08-04)
+
+
+### Bug Fixes
+
+* **sec:** bump brace-expansion ([#415](https://github.com/WFCD/warframe-relic-data/issues/415)) ([7b2ef5e](https://github.com/WFCD/warframe-relic-data/commit/7b2ef5e839c00d591e5e0b63a397d98ba8aae4f6))
+
 ## [2.0.29](https://github.com/WFCD/warframe-relic-data/compare/v2.0.28...v2.0.29) (2026-02-23)
 
 
