@@ -1,3 +1,10 @@
+## [2.0.31](https://github.com/WFCD/warframe-relic-data/compare/v2.0.30...v2.0.31) (2026-08-12)
+
+
+### Bug Fixes
+
+* **#412:** uniqueName stamping on relic drops ([#422](https://github.com/WFCD/warframe-relic-data/issues/422)) ([df55cfd](https://github.com/WFCD/warframe-relic-data/commit/df55cfd58e29c3d0504b6201e5611439cfce7f3e)), closes [#412](https://github.com/WFCD/warframe-relic-data/issues/412)
+
 ## [2.0.30](https://github.com/WFCD/warframe-relic-data/compare/v2.0.29...v2.0.30) (2026-08-04)
 
 
