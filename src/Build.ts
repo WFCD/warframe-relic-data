@@ -1,6 +1,6 @@
 import { Generator } from './Generator';
-import { VersionManager } from './VersionManager';
 import logger from './Logger';
+import { VersionManager } from './VersionManager';
 
 /**
  * Entrypoint for the build process.

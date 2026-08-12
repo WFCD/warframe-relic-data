@@ -1,7 +1,6 @@
-import path from 'node:path';
-import fs from 'node:fs/promises';
-
 import fetch from 'node-fetch';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 import { PatchData } from 'warframe-patchlogs';
 
 import Config from './Config';
@@ -9,19 +8,19 @@ import logger from './Logger';
 
 interface DropsInfo {
   hash: string;
-  timestamp: string;
   modified: string;
+  timestamp: string;
 }
 interface DropsInfoFile {
   hash: string;
 }
 
 export class VersionManager {
+  hashPath: string;
+
   versionPath: string;
 
   versionRawPath: string;
-
-  hashPath: string;
 
   /**
    * Creates a new VersionManager instance.
@@ -43,13 +42,13 @@ export class VersionManager {
     if (!infoReq.ok) {
       logger.fatal('Failed to fetch version info!');
     }
-    const info: DropsInfo = (await infoReq.json()) as unknown as DropsInfo;
+    const info = (await infoReq.json()) as DropsInfo;
 
     try {
       await fs.access(this.hashPath);
       const infoFile: DropsInfoFile = JSON.parse(await fs.readFile(this.hashPath, 'utf-8')) as DropsInfoFile;
       return infoFile.hash !== info.hash;
-    } catch (ex) {
+    } catch {
       // Info file doesn't exist, so we need an update
       return true;
     }
@@ -80,9 +79,9 @@ export class VersionManager {
       return;
     }
     const hashInfo = (await hashReq.json()) as unknown as DropsInfo;
-    const versionInfo = { version, title: patchlogs[0].name };
+    const versionInfo = { title: patchlogs[0].name, version };
 
-    const hashFile = { hash: hashInfo.hash, deUpdated: hashInfo.modified, timestamp };
+    const hashFile = { deUpdated: hashInfo.modified, hash: hashInfo.hash, timestamp };
     await fs.writeFile(this.hashPath, JSON.stringify(hashFile, undefined, 2), 'utf-8');
     await fs.writeFile(this.versionPath, JSON.stringify(versionInfo, undefined, 2), 'utf-8');
     await fs.writeFile(this.versionRawPath, version, 'utf-8');

@@ -9,34 +9,30 @@ enum LogLevel {
 
 const fromString = (logLevelIsh: string): LogLevel => {
   switch (logLevelIsh?.toLowerCase()) {
+    case 'bad':
+    case 'error':
+      return LogLevel.ERROR;
+    case 'debug':
+      return LogLevel.DEBUG;
     case 'fatal':
       return LogLevel.FATAL;
-    case 'error':
-    case 'bad':
-      return LogLevel.ERROR;
     case 'info':
     case 'log':
       return LogLevel.LOG;
-    case 'debug':
-      return LogLevel.DEBUG;
     default:
       return LogLevel.FATAL;
   }
 };
 
 class Logger {
-  private readonly logLevel: LogLevel = fromString(process.env.LOG_LEVEL || 'fatal');
+  private readonly logLevel: LogLevel = fromString(process.env.LOG_LEVEL ?? 'fatal');
 
-  log(message: string) {
-    if (this.logLevel >= LogLevel.LOG) console.log(message);
+  debug(message: string) {
+    if (this.logLevel === LogLevel.DEBUG) console.debug(message);
   }
 
   error(message: string) {
     if (this.logLevel >= LogLevel.ERROR) console.error(message);
-  }
-
-  debug(message: string) {
-    if (this.logLevel === LogLevel.DEBUG) console.debug(message);
   }
 
   fatal(message: string) {
@@ -44,6 +40,10 @@ class Logger {
       console.error(`FATAL: ${message}`);
       throw new Error(message);
     }
+  }
+
+  log(message: string) {
+    if (this.logLevel >= LogLevel.LOG) console.log(message);
   }
 }
 
