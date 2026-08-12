@@ -41,7 +41,6 @@
     "@types/chai": "^4.3.3",
     "@types/mocha": "^10.0.0",
     "@types/node": "^26.0.0",
-    "@types/node-fetch": "^2.6.2",
     "chai": "^4.3.6",
     "coveralls": "^3.1.1",
     "eslint": "^10.1.0",
@@ -57,12 +56,6 @@
     "tsx": "^4.21.0",
     "typescript": "^5.0.4",
     "typescript-eslint": "^8.58.0"
-  },
-  "dependencies": {
-    "@semantic-release/changelog": "^7.0.0",
-    "@semantic-release/git": "^11.0.1",
-    "node-fetch": "^2.6.7",
-    "warframe-patchlogs": "^2.3.3"
   },
   "publishConfig": {
     "provenance": true
