@@ -1,7 +1,5 @@
-import fetch from 'node-fetch';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { PatchData } from 'warframe-patchlogs';
 
 import Config from './Config';
 import logger from './Logger';
@@ -13,6 +11,9 @@ interface DropsInfo {
 }
 interface DropsInfoFile {
   hash: string;
+}
+interface PatchLog {
+  name: string;
 }
 
 export class VersionManager {
@@ -64,7 +65,7 @@ export class VersionManager {
       logger.error('Failed to fetch patchlogs');
       return;
     }
-    const patchlogs = (await patchLogsReq.json()) as unknown as PatchData[];
+    const patchlogs = (await patchLogsReq.json()) as unknown as PatchLog[];
 
     // Shamelessly stolen from https://github.com/WFCD/warframe-items/blob/master/build/build.js
     // (MIT License: https://github.com/WFCD/warframe-items/blob/master/LICENSE)
