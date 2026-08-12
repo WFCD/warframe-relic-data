@@ -5,13 +5,17 @@
 .github/
 .gitignore
 .gitattributes
+.husky/
 .jshintignore
 .jshintrc
+.lintstagedrc.yml
 .mocharc.json
 .nvmrc
 .nycrc.json
 .prettierrc.json
 .releaserc.json
+commitlint.config.mjs
+eslint.config.mjs
 tsdown.config.json
 
 # Generated Data Files

@@ -1,9 +1,11 @@
 const Config = {
-  warframeRelicDropUrl: 'https://drops.warframestat.us/data/relics.json',
-  warframeMarketItemUrl: 'https://api.warframe.market/v2/items',
+  warframeItemByNameUrl: 'https://api.warframestat.us/items/',
+  warframeItemsSparseUrl: 'https://api.warframestat.us/items/?only=name,uniqueName',
   warframeItemsUrl: 'https://api.warframestat.us/items/search/Relics?by=category',
-  warframeRelicDropInfoUrl: 'https://drops.warframestat.us/data/info.json',
+  warframeMarketItemUrl: 'https://api.warframe.market/v2/items',
   warframePatchlogsUrl: 'https://raw.githubusercontent.com/WFCD/warframe-patchlogs/master/data/patchlogs.json',
+  warframeRelicDropInfoUrl: 'https://drops.warframestat.us/data/info.json',
+  warframeRelicDropUrl: 'https://drops.warframestat.us/data/relics.json',
 };
 
 export default Config;

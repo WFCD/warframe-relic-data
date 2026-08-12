@@ -16,9 +16,9 @@
     "coverage": "npm test && nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "postinstall": "npx install-peerdeps @wfcd/eslint-config@latest -S",
     "prepack": "npm run build",
-    "start": "npm run build && node dist/Build.js",
+    "prepare": "husky",
+    "start": "npm run build && node dist/Build.cjs",
     "test": "nyc mocha",
     "validate": "tsc --noEmit"
   },
@@ -34,21 +34,29 @@
   },
   "homepage": "https://github.com/WFCD/warframe-relic-data#readme",
   "devDependencies": {
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@types/chai": "^4.3.3",
     "@types/mocha": "^10.0.0",
     "@types/node": "^26.0.0",
     "@types/node-fetch": "^2.6.2",
-    "@wfcd/eslint-config": "^1.2.0",
     "chai": "^4.3.6",
     "coveralls": "^3.1.1",
+    "eslint": "^10.1.0",
+    "eslint-plugin-perfectionist": "^5.10.1",
+    "globals": "^17.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
     "mocha": "^10.0.0",
     "nyc": "^18.0.0",
-    "precommit-hook": "^3.0.0",
     "ts-mocha": "^11.1.0",
     "tsconfig-paths": "^4.1.0",
     "tsdown": "^0.22.0",
     "tsx": "^4.21.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "typescript-eslint": "^8.58.0"
   },
   "dependencies": {
     "@semantic-release/changelog": "^7.0.0",
@@ -56,11 +64,6 @@
     "node-fetch": "^2.6.7",
     "warframe-patchlogs": "^2.3.3"
   },
-  "pre-commit": [
-    "lint",
-    "test",
-    "validate"
-  ],
   "publishConfig": {
     "provenance": true
   }

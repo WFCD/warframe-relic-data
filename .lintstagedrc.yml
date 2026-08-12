@@ -1,0 +1,2 @@
+'*.{js,ts,mjs,cjs}':
+  - eslint --cache --fix
