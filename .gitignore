@@ -11,6 +11,7 @@ coverage/
 
 # caches?
 .npm
+.eslintcache
 
 
 .jshint*
