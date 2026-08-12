@@ -1,3 +1,10 @@
+## [2.0.32](https://github.com/WFCD/warframe-relic-data/compare/v2.0.31...v2.0.32) (2026-08-12)
+
+
+### Bug Fixes
+
+* **deps:** drop unnecessary prod dependencies ([#423](https://github.com/WFCD/warframe-relic-data/issues/423)) ([0ea53b5](https://github.com/WFCD/warframe-relic-data/commit/0ea53b58cccac70d959a7bf00bbe672327c07c8e))
+
 ## [2.0.31](https://github.com/WFCD/warframe-relic-data/compare/v2.0.30...v2.0.31) (2026-08-12)
 
 

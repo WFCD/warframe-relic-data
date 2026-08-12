@@ -59,5 +59,9 @@
   },
   "publishConfig": {
     "provenance": true
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^7.0.0",
+    "@semantic-release/git": "^11.0.1"
   }
 }
