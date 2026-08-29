@@ -1,3 +1,10 @@
+## [2.0.33](https://github.com/WFCD/warframe-relic-data/compare/v2.0.32...v2.0.33) (2026-08-29)
+
+
+### Bug Fixes
+
+* bump tar and npm ([#426](https://github.com/WFCD/warframe-relic-data/issues/426)) ([d016ca9](https://github.com/WFCD/warframe-relic-data/commit/d016ca93af7c7ceb7e47fd661314a026cac68f67))
+
 ## [2.0.32](https://github.com/WFCD/warframe-relic-data/compare/v2.0.31...v2.0.32) (2026-08-12)
 
 
