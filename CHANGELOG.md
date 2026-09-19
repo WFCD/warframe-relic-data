@@ -1,3 +1,10 @@
+## [2.0.35](https://github.com/WFCD/warframe-relic-data/compare/v2.0.34...v2.0.35) (2026-09-19)
+
+
+### Bug Fixes
+
+* bump the default group with 4 updates ([#433](https://github.com/WFCD/warframe-relic-data/issues/433)) ([83e8d55](https://github.com/WFCD/warframe-relic-data/commit/83e8d55319f59eb0954a64d51ecec3a83dc3e22a))
+
 ## [2.0.34](https://github.com/WFCD/warframe-relic-data/compare/v2.0.33...v2.0.34) (2026-09-03)
 
 
