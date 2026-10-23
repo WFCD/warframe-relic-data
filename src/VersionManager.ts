@@ -3,6 +3,7 @@ import path from 'node:path';
 
 import Config from './Config';
 import logger from './Logger';
+import { request } from './request';
 
 interface DropsInfo {
   hash: string;
@@ -39,7 +40,7 @@ export class VersionManager {
    * Checks if the current data needs an update
    */
   async updateNeeded(): Promise<boolean> {
-    const infoReq = await fetch(Config.warframeRelicDropInfoUrl);
+    const infoReq = await request(Config.warframeRelicDropInfoUrl);
     if (!infoReq.ok) {
       logger.fatal('Failed to fetch version info!');
     }
@@ -60,7 +61,7 @@ export class VersionManager {
    * @param {number} timestamp Timestamp the build was started at
    */
   async writeVersion(timestamp: number): Promise<void> {
-    const patchLogsReq = await fetch(Config.warframePatchlogsUrl);
+    const patchLogsReq = await request(Config.warframePatchlogsUrl);
     if (!patchLogsReq.ok) {
       logger.error('Failed to fetch patchlogs');
       return;
@@ -74,7 +75,7 @@ export class VersionManager {
       .replace(/[^0-9\-.]/g, '')
       .trim();
 
-    const hashReq = await fetch(Config.warframeRelicDropInfoUrl);
+    const hashReq = await request(Config.warframeRelicDropInfoUrl);
     if (!hashReq.ok) {
       logger.error('Failed to fetch hashInfo');
       return;
