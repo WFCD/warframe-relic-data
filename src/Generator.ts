@@ -9,6 +9,7 @@ import {
   resolveRewardUniqueName,
 } from './itemUniqueName';
 import logger from './Logger';
+import { request } from './request';
 import {
   Rarity,
   TitaniaRelic,
@@ -41,31 +42,27 @@ export class Generator {
    * Fetches all required data from WFCD and WFM.
    */
   public async fetchRawData(): Promise<void> {
-    const relicRequest = await fetch(Config.warframeRelicDropUrl);
+    const relicRequest = await request(Config.warframeRelicDropUrl);
     if (!relicRequest.ok) {
-      logger.error('Failed to fetch Warframe relics from WFCD!');
-      return;
+      logger.fatal(`Failed to fetch Warframe relics from WFCD: HTTP ${relicRequest.status}`);
     }
     this.relicsRaw = ((await relicRequest.json()) as { relics: WFCDRelic[] })?.relics;
 
-    const wfmRequest = await fetch(Config.warframeMarketItemUrl);
+    const wfmRequest = await request(Config.warframeMarketItemUrl);
     if (!wfmRequest.ok) {
-      logger.error('Failed to fetch items from WFM!');
-      return;
+      logger.fatal(`Failed to fetch items from WFM: HTTP ${wfmRequest.status}`);
     }
     this.wfmItems = (await wfmRequest.json()) as WarframeMarketRoot;
 
-    const wfcdItemRequest = await fetch(Config.warframeItemsUrl);
+    const wfcdItemRequest = await request(Config.warframeItemsUrl);
     if (!wfcdItemRequest.ok) {
-      logger.error('Failed to fetch items from WFCD! ');
-      return;
+      logger.fatal(`Failed to fetch items from WFCD: HTTP ${wfcdItemRequest.status}`);
     }
     this.wfcdItems = (await wfcdItemRequest.json()) as WFCDItem[];
 
-    const sparseRequest = await fetch(Config.warframeItemsSparseUrl);
+    const sparseRequest = await request(Config.warframeItemsSparseUrl);
     if (!sparseRequest.ok) {
-      logger.error('Failed to fetch sparse items from WFCD!');
-      return;
+      logger.fatal(`Failed to fetch sparse items from WFCD: HTTP ${sparseRequest.status}`);
     }
     const sparseItems = (await sparseRequest.json()) as WFCDSparseItem[];
     this.indexSparseItems(sparseItems);
@@ -132,7 +129,7 @@ export class Generator {
    */
   private async fetchItemByName(name: string): Promise<undefined | WFCDSparseItem> {
     const url = `${Config.warframeItemByNameUrl}${encodeURIComponent(name)}?only=name,uniqueName,components`;
-    const response = await fetch(url);
+    const response = await request(url);
     if (!response.ok) {
       logger.debug(`Failed to fetch item by name: ${name} (${response.status})`);
       return undefined;
