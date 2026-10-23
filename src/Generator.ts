@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import Config from './Config';
+import { fetch } from './fetch';
 import {
   BLUEPRINT_SUFFIX,
   buildItemUniqueNameIndex,
@@ -9,7 +10,6 @@ import {
   resolveRewardUniqueName,
 } from './itemUniqueName';
 import logger from './Logger';
-import { request } from './request';
 import {
   Rarity,
   TitaniaRelic,
@@ -42,25 +42,25 @@ export class Generator {
    * Fetches all required data from WFCD and WFM.
    */
   public async fetchRawData(): Promise<void> {
-    const relicRequest = await request(Config.warframeRelicDropUrl);
+    const relicRequest = await fetch(Config.warframeRelicDropUrl);
     if (!relicRequest.ok) {
       logger.fatal(`Failed to fetch Warframe relics from WFCD: HTTP ${relicRequest.status}`);
     }
     this.relicsRaw = ((await relicRequest.json()) as { relics: WFCDRelic[] })?.relics;
 
-    const wfmRequest = await request(Config.warframeMarketItemUrl);
+    const wfmRequest = await fetch(Config.warframeMarketItemUrl);
     if (!wfmRequest.ok) {
       logger.fatal(`Failed to fetch items from WFM: HTTP ${wfmRequest.status}`);
     }
     this.wfmItems = (await wfmRequest.json()) as WarframeMarketRoot;
 
-    const wfcdItemRequest = await request(Config.warframeItemsUrl);
+    const wfcdItemRequest = await fetch(Config.warframeItemsUrl);
     if (!wfcdItemRequest.ok) {
       logger.fatal(`Failed to fetch items from WFCD: HTTP ${wfcdItemRequest.status}`);
     }
     this.wfcdItems = (await wfcdItemRequest.json()) as WFCDItem[];
 
-    const sparseRequest = await request(Config.warframeItemsSparseUrl);
+    const sparseRequest = await fetch(Config.warframeItemsSparseUrl);
     if (!sparseRequest.ok) {
       logger.fatal(`Failed to fetch sparse items from WFCD: HTTP ${sparseRequest.status}`);
     }
@@ -129,7 +129,7 @@ export class Generator {
    */
   private async fetchItemByName(name: string): Promise<undefined | WFCDSparseItem> {
     const url = `${Config.warframeItemByNameUrl}${encodeURIComponent(name)}?only=name,uniqueName,components`;
-    const response = await request(url);
+    const response = await fetch(url);
     if (!response.ok) {
       logger.debug(`Failed to fetch item by name: ${name} (${response.status})`);
       return undefined;
