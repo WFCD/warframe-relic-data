@@ -5,6 +5,4 @@ import Config from './Config';
  * @param {string} url URL to fetch
  * @returns {Promise<Response>} The response
  */
-export function fetch(url: string): Promise<Response> {
-  return globalThis.fetch(url, { headers: { 'user-agent': Config.userAgent } });
-}
+export const fetch = (url: string): Promise<Response> => globalThis.fetch(url, { headers: { 'user-agent': Config.userAgent } });
