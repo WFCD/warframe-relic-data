@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import Config from './Config';
+import { fetch } from './fetch';
 import logger from './Logger';
 
 interface DropsInfo {
