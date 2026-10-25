@@ -1,3 +1,10 @@
+## [2.0.37](https://github.com/WFCD/warframe-relic-data/compare/v2.0.36...v2.0.37) (2026-10-25)
+
+
+### Bug Fixes
+
+* **sec:** bump serialize-javascript from 7.1.2 to 7.1.4 ([#447](https://github.com/WFCD/warframe-relic-data/issues/447)) ([d52e1d2](https://github.com/WFCD/warframe-relic-data/commit/d52e1d26878c6eaeb4dd8283d8b16531353064f7))
+
 ## [2.0.36](https://github.com/WFCD/warframe-relic-data/compare/v2.0.35...v2.0.36) (2026-10-25)
 
 
