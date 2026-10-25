@@ -1,4 +1,5 @@
 const Config = {
+  userAgent: 'warframe-relic-data (https://github.com/WFCD/warframe-relic-data)',
   warframeItemByNameUrl: 'https://api.warframestat.us/items/',
   warframeItemsSparseUrl: 'https://api.warframestat.us/items/?only=name,uniqueName',
   warframeItemsUrl: 'https://api.warframestat.us/items/search/Relics?by=category',
