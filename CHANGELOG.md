@@ -1,3 +1,10 @@
+## [2.0.36](https://github.com/WFCD/warframe-relic-data/compare/v2.0.35...v2.0.36) (2026-10-25)
+
+
+### Bug Fixes
+
+* **sec:** bump undici ([#446](https://github.com/WFCD/warframe-relic-data/issues/446)) ([94984a4](https://github.com/WFCD/warframe-relic-data/commit/94984a42924ff0d49a2825615e2518df356b3f36))
+
 ## [2.0.35](https://github.com/WFCD/warframe-relic-data/compare/v2.0.34...v2.0.35) (2026-09-19)
 
 
