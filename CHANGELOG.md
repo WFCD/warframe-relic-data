@@ -1,3 +1,10 @@
+## [2.0.38](https://github.com/WFCD/warframe-relic-data/compare/v2.0.37...v2.0.38) (2026-10-25)
+
+
+### Bug Fixes
+
+* **sec:** bump fast-uri from 3.1.8 to 3.1.9 ([#448](https://github.com/WFCD/warframe-relic-data/issues/448)) ([ffe6d62](https://github.com/WFCD/warframe-relic-data/commit/ffe6d62b08ffbad53d12a91150633f346cb58280))
+
 ## [2.0.37](https://github.com/WFCD/warframe-relic-data/compare/v2.0.36...v2.0.37) (2026-10-25)
 
 
