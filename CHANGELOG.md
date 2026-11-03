@@ -1,3 +1,10 @@
+## [2.0.39](https://github.com/WFCD/warframe-relic-data/compare/v2.0.38...v2.0.39) (2026-11-03)
+
+
+### Bug Fixes
+
+* set user agent in requests, fail on rejects ([#444](https://github.com/WFCD/warframe-relic-data/issues/444)) ([f6f92cc](https://github.com/WFCD/warframe-relic-data/commit/f6f92cccceb0f1bff8767ad73e824de6e26da37a))
+
 ## [2.0.38](https://github.com/WFCD/warframe-relic-data/compare/v2.0.37...v2.0.38) (2026-10-25)
 
 
