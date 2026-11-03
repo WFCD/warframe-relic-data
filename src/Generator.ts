@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 import Config from './Config';
+import { fetch } from './fetch';
 import {
   BLUEPRINT_SUFFIX,
   buildItemUniqueNameIndex,
@@ -43,29 +44,25 @@ export class Generator {
   public async fetchRawData(): Promise<void> {
     const relicRequest = await fetch(Config.warframeRelicDropUrl);
     if (!relicRequest.ok) {
-      logger.error('Failed to fetch Warframe relics from WFCD!');
-      return;
+      logger.fatal(`Failed to fetch Warframe relics from WFCD: HTTP ${relicRequest.status}`);
     }
     this.relicsRaw = ((await relicRequest.json()) as { relics: WFCDRelic[] })?.relics;
 
     const wfmRequest = await fetch(Config.warframeMarketItemUrl);
     if (!wfmRequest.ok) {
-      logger.error('Failed to fetch items from WFM!');
-      return;
+      logger.fatal(`Failed to fetch items from WFM: HTTP ${wfmRequest.status}`);
     }
     this.wfmItems = (await wfmRequest.json()) as WarframeMarketRoot;
 
     const wfcdItemRequest = await fetch(Config.warframeItemsUrl);
     if (!wfcdItemRequest.ok) {
-      logger.error('Failed to fetch items from WFCD! ');
-      return;
+      logger.fatal(`Failed to fetch items from WFCD: HTTP ${wfcdItemRequest.status}`);
     }
     this.wfcdItems = (await wfcdItemRequest.json()) as WFCDItem[];
 
     const sparseRequest = await fetch(Config.warframeItemsSparseUrl);
     if (!sparseRequest.ok) {
-      logger.error('Failed to fetch sparse items from WFCD!');
-      return;
+      logger.fatal(`Failed to fetch sparse items from WFCD: HTTP ${sparseRequest.status}`);
     }
     const sparseItems = (await sparseRequest.json()) as WFCDSparseItem[];
     this.indexSparseItems(sparseItems);
